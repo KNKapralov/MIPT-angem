@@ -1,0 +1,48 @@
+\documentclass{angem}
+
+% bigzero for matrices
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+
+% horizontal analog of raisebox
+\newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
+
+\input{optional}
+
+\newcommand{\studentpage}[2]{%
+    \newpage\setcounter{page}{1}
+    \fancyhead[R]{#1}
+    \fancyhead[L]{20 сентября 2018 г.}
+    \section*{Тест к воркшопу по аналитической геометрии}
+        \input{test}
+    \newpage
+    \section*{Задания к воркшопу по аналитической геометрии}
+    \subsection*{Базовые обязательные задания}
+        \input{obligatory}
+
+    \subsection*{Дополнительные индивидуальные задания}
+        \begin{enumerate}
+            #2
+        \end{enumerate}
+}
+
+
+\begin{document}
+	\studentpage{Алесь Бінкевіч}{\simple}
+	\studentpage{Бакуменко Сергей}{\hard}
+%	\studentpage{Балбек Кирилл}{\simpleset}
+%	\studentpage{Ведерникова Валерия}{\hardset}
+%	\studentpage{Голиус Маргарита}{\hardset}
+%	\studentpage{Гришкова Лиза}{\hardset}
+%	\studentpage{Ермоленко Александр}{\simpleset}
+%	\studentpage{Захарова Анастасия}{\simpleset}
+%	\studentpage{Клюкин Михаил}{\simpleset}
+%	\studentpage{Коновалова Татьяна}{\hardset}
+%	\studentpage{Кренгауз Михаил}{\simpleset}
+%	\studentpage{Кузь Глеб}{\simpleset}
+%	\studentpage{Лазарева Анастасия}{\simpleset}
+%	\studentpage{Маркелова Екатерина}{\simpleset}
+%	\studentpage{Синькин Александр}{\simpleset}
+%	\studentpage{Ступникова Галина}{\simpleset}
+%	\studentpage{Тышевич Андрей}{\hardset}
+\end{document}
+
